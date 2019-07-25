@@ -1,0 +1,14 @@
+<p>
+  http works!
+</p>
+
+
+
+<div *ngIf="chart">
+  <canvas id="canvas">{{ chart }}</canvas>
+</div>
+
+
+<ul *ngFor = "let data of httpdata">
+  <li>Avg Temperature: {{data.address.geo.lat}}</li>
+</ul>
